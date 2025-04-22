@@ -1,0 +1,232 @@
+/* Base neon glow class */
+.neon-glow {
+  transition: filter 0.3s ease;
+}
+
+/* Different color options */
+.neon-cyan {
+  filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.7))
+         drop-shadow(0 0 10px rgba(0, 255, 255, 0.5))
+         drop-shadow(0 0 15px rgba(0, 255, 255, 0.3));
+}
+
+.neon-blue {
+  filter: drop-shadow(0 0 5px rgba(0, 100, 255, 0.7))
+         drop-shadow(0 0 10px rgba(0, 100, 255, 0.5))
+         drop-shadow(0 0 15px rgba(0, 100, 255, 0.3));
+}
+
+.neon-purple {
+  filter: drop-shadow(0 0 5px rgba(150, 0, 255, 0.7))
+         drop-shadow(0 0 10px rgba(150, 0, 255, 0.5))
+         drop-shadow(0 0 15px rgba(150, 0, 255, 0.3));
+}
+
+.neon-pink {
+  filter: drop-shadow(0 0 5px rgba(255, 0, 200, 0.7))
+         drop-shadow(0 0 10px rgba(255, 0, 200, 0.5))
+         drop-shadow(0 0 15px rgba(255, 0, 200, 0.3));
+}
+
+.neon-green {
+  filter: drop-shadow(0 0 5px rgba(0, 255, 100, 0.7))
+         drop-shadow(0 0 10px rgba(0, 255, 100, 0.5))
+         drop-shadow(0 0 15px rgba(0, 255, 100, 0.3));
+}
+
+.neon-orange {
+  filter: drop-shadow(0 0 5px rgba(255, 100, 0, 0.7))
+         drop-shadow(0 0 10px rgba(255, 100, 0, 0.5))
+         drop-shadow(0 0 15px rgba(255, 100, 0, 0.3));
+}
+
+.neon-red {
+  filter: drop-shadow(0 0 5px rgba(255, 0, 0, 0.7))
+         drop-shadow(0 0 10px rgba(255, 0, 0, 0.5))
+         drop-shadow(0 0 15px rgba(255, 0, 0, 0.3));
+}
+
+.neon-white {
+  filter: drop-shadow(0 0 5px rgb(255, 255, 255))
+         drop-shadow(0 0 10px rgb(255, 255, 255))
+         drop-shadow(0 0 15px rgb(255, 255, 255));
+}
+
+/* Pop animation */
+@keyframes popAnimation {
+  0% {
+    transform: translateX(2.75rem) scale(1);
+  }
+  25% {
+    transform: translateX(2.75rem) translateY(-10px) scale(1.05);
+  }
+  50% {
+    transform: translateX(2.75rem) translateY(0) scale(1.1);
+  }
+  75% {
+    transform: translateX(2.75rem) translateY(10px) scale(1.05);
+  }
+  100% {
+    transform: translateX(2.75rem) scale(1);
+  }
+}
+
+.pop-animation {
+  animation: popAnimation 2s infinite ease-in-out;
+  transform-origin: center center;
+}
+
+/* Enhanced hover effects for each color */
+.neon-cyan:hover {
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8))
+         drop-shadow(0 0 15px rgba(0, 255, 255, 0.6))
+         drop-shadow(0 0 20px rgba(0, 255, 255, 0.4));
+}
+
+.neon-blue:hover {
+  filter: drop-shadow(0 0 8px rgba(0, 100, 255, 0.8))
+         drop-shadow(0 0 15px rgba(0, 100, 255, 0.6))
+         drop-shadow(0 0 20px rgba(0, 100, 255, 0.4));
+}
+
+.neon-purple:hover {
+  filter: drop-shadow(0 0 8px rgba(150, 0, 255, 0.8))
+         drop-shadow(0 0 15px rgba(150, 0, 255, 0.6))
+         drop-shadow(0 0 20px rgba(150, 0, 255, 0.4));
+}
+
+.neon-pink:hover {
+  filter: drop-shadow(0 0 8px rgba(255, 0, 200, 0.8))
+         drop-shadow(0 0 15px rgba(255, 0, 200, 0.6))
+         drop-shadow(0 0 20px rgba(255, 0, 200, 0.4));
+}
+
+.neon-green:hover {
+  filter: drop-shadow(0 0 8px rgba(0, 255, 100, 0.8))
+         drop-shadow(0 0 15px rgba(0, 255, 100, 0.6))
+         drop-shadow(0 0 20px rgba(0, 255, 100, 0.4));
+}
+
+.neon-orange:hover {
+  filter: drop-shadow(0 0 8px rgba(255, 100, 0, 0.8))
+         drop-shadow(0 0 15px rgba(255, 100, 0, 0.6))
+         drop-shadow(0 0 20px rgba(255, 100, 0, 0.4));
+}
+
+.neon-red:hover {
+  filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.8))
+         drop-shadow(0 0 15px rgba(255, 0, 0, 0.6))
+         drop-shadow(0 0 20px rgba(255, 0, 0, 0.4));
+}
+
+/* Nav item base styles */
+.nav-item {
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* OS gradient and glow */
+.os-gradient {
+  background-image: linear-gradient(to bottom, #B02E67, #F47A48);
+}
+
+/* DMJ gradient and glow */
+.dmj-gradient {
+  background-image: linear-gradient(to bottom, #9C1673, #9CCF5E);
+}
+
+/* SBD gradient and glow */
+.sbd-gradient {
+  background-image: linear-gradient(to bottom, #F47A48, #00E5C3);
+}
+
+/* Hover effects with text-shadow for neon glow */
+.os-gradient:hover {
+  text-shadow: 
+    0 0 5px rgba(176, 46, 103, 0.7),
+    0 0 10px rgba(176, 46, 103, 0.5),
+    0 0 15px rgba(244, 122, 72, 0.3),
+    0 0 20px rgba(244, 122, 72, 0.2);
+}
+
+.dmj-gradient:hover {
+  text-shadow: 
+    0 0 5px rgba(156, 22, 115, 0.7),
+    0 0 10px rgba(156, 22, 115, 0.5),
+    0 0 15px rgba(156, 204, 94, 0.3),
+    0 0 20px rgba(156, 204, 94, 0.2);
+}
+
+.sbd-gradient:hover {
+  text-shadow: 
+    0 0 5px rgba(244, 122, 72, 0.7),
+    0 0 10px rgba(244, 122, 72, 0.5),
+    0 0 15px rgba(0, 229, 195, 0.3),
+    0 0 20px rgba(0, 229, 195, 0.2);
+}
+
+/* Add a slight pulse animation on hover */
+@keyframes neonPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.nav-item:hover {
+  animation: neonPulse 1.5s infinite;
+  transform: scale(1.05);
+}
+
+/* Add these classes for the neon line at the bottom of navbar */
+.neon-line {
+  top: 96px; /* Position it at the bottom of the navbar (24px * 4) */
+  background: linear-gradient(
+    90deg,
+    rgba(244, 122, 72, 0),
+    rgba(156, 22, 115, 0.7),
+    rgba(0, 229, 195, 0.9),
+    rgba(156, 204, 94, 0.7),
+    rgba(244, 122, 72, 0)
+  );
+  box-shadow: 
+    0 0 5px rgba(156, 22, 115, 0.5),
+    0 0 10px rgba(0, 229, 195, 0.5),
+    0 0 15px rgba(156, 204, 94, 0.5);
+  animation: neonLinePulse 3s infinite alternate, neonLineMove 15s linear infinite;
+}
+
+.neon-line-dark {
+  opacity: 0.85;
+}
+
+.neon-line-light {
+  opacity: 0.7;
+}
+
+@keyframes neonLinePulse {
+  0% {
+    box-shadow: 
+      0 0 5px rgba(156, 22, 115, 0.5),
+      0 0 10px rgba(0, 229, 195, 0.5);
+  }
+  100% {
+    box-shadow: 
+      0 0 7px rgba(156, 22, 115, 0.7),
+      0 0 14px rgba(0, 229, 195, 0.7),
+      0 0 20px rgba(156, 204, 94, 0.5);
+  }
+}
+
+@keyframes neonLineMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
